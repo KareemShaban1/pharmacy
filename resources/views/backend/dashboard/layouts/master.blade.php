@@ -47,24 +47,14 @@
                 </div>
                 <!--end::Content-->
 
-                <!--begin::Footer-->
-                {{-- @include('backend.dashboard.layouts.footer') --}}
-                <!--end::Footer-->
+
             </div>
             <!--end::Wrapper-->
         </div>
         <!--end::Page-->
     </div>
     <!--end::Root-->
-    <!--begin::Drawers-->
-    <!--begin::Activities drawer-->
-    @include('backend.dashboard.layouts.activity_drawer')
-    <!--end::Activities drawer-->
-    <!--begin::Chat drawer-->
-    @include('backend.dashboard.layouts.chat_drawer')
-    <!--end::Chat drawer-->
 
-    <!--end::Drawers-->
 
     <!--begin::Scrolltop-->
     <div id="kt_scrolltop" class="scrolltop" data-kt-scrolltop="true">
