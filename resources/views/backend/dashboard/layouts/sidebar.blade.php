@@ -13,7 +13,8 @@
                 </div>
             </div>
             <div class="menu-item">
-                <a class="menu-link active" href="">
+                <a class="{{ request()->routeIs('dashboard') ? 'menu-link active' : 'menu-link' }}"
+                    href="{{ route('dashboard') }}">
                     <span class="menu-icon">
                         <!--begin::Svg Icon | path: icons/duotune/general/gen025.svg-->
                         <span class="svg-icon svg-icon-2">
@@ -30,7 +31,7 @@
                         </span>
                         <!--end::Svg Icon-->
                     </span>
-                    <span class="menu-title">Default</span>
+                    <span class="menu-title">Dashboard</span>
                 </a>
             </div>
 
@@ -63,7 +64,7 @@
                     <span class="menu-arrow"></span>
                 </span>
                 <div class="menu-sub menu-sub-accordion">
-                    <div class="menu-item">
+                    <div class="{{ request()->routeIs('effectiveMaterial.index') ? 'menu-link active' : 'menu-link' }}">
                         <a class="menu-link" href="{{ route('effectiveMaterial.index') }}">
                             <span class="menu-bullet">
                                 <span class="bullet bullet-dot"></span>
@@ -97,7 +98,8 @@
                     <span class="menu-arrow"></span>
                 </span>
                 <div class="menu-sub menu-sub-accordion">
-                    <div class="menu-item">
+                    <div
+                        class="{{ request()->routeIs('distributionCompany.index') ? 'menu-link active' : 'menu-link' }}">
                         <a class="menu-link" href="{{ route('distributionCompany.index') }}">
                             <span class="menu-bullet">
                                 <span class="bullet bullet-dot"></span>
@@ -131,7 +133,7 @@
                     <span class="menu-arrow"></span>
                 </span>
                 <div class="menu-sub menu-sub-accordion">
-                    <div class="menu-item">
+                    <div class="{{ request()->routeIs('producingCompany.index') ? 'menu-link active' : 'menu-link' }}">
                         <a class="menu-link" href="{{ route('producingCompany.index') }}">
                             <span class="menu-bullet">
                                 <span class="bullet bullet-dot"></span>
@@ -164,7 +166,7 @@
                     <span class="menu-arrow"></span>
                 </span>
                 <div class="menu-sub menu-sub-accordion">
-                    <div class="menu-item">
+                    <div class="{{ request()->routeIs('productCategory.index') ? 'menu-link active' : 'menu-link' }}">
                         <a class="menu-link" href="{{ route('productCategory.index') }}">
                             <span class="menu-bullet">
                                 <span class="bullet bullet-dot"></span>
@@ -195,7 +197,7 @@
                     <span class="menu-arrow"></span>
                 </span>
                 <div class="menu-sub menu-sub-accordion">
-                    <div class="menu-item">
+                    <div class="{{ request()->routeIs('productGroup.index') ? 'menu-link active' : 'menu-link' }}">
                         <a class="menu-link" href="{{ route('productGroup.index') }}">
                             <span class="menu-bullet">
                                 <span class="bullet bullet-dot"></span>
@@ -226,7 +228,7 @@
                     <span class="menu-arrow"></span>
                 </span>
                 <div class="menu-sub menu-sub-accordion">
-                    <div class="menu-item">
+                    <div class="{{ request()->routeIs('productType.index') ? 'menu-link active' : 'menu-link' }}">
                         <a class="menu-link" href="{{ route('productType.index') }}">
                             <span class="menu-bullet">
                                 <span class="bullet bullet-dot"></span>
@@ -259,7 +261,7 @@
                     <span class="menu-arrow"></span>
                 </span>
                 <div class="menu-sub menu-sub-accordion">
-                    <div class="menu-item">
+                    <div class="{{ request()->routeIs('productProperty.index') ? 'menu-link active' : 'menu-link' }}">
                         <a class="menu-link" href="{{ route('productProperty.index') }}">
                             <span class="menu-bullet">
                                 <span class="bullet bullet-dot"></span>
@@ -291,7 +293,7 @@
                     <span class="menu-arrow"></span>
                 </span>
                 <div class="menu-sub menu-sub-accordion">
-                    <div class="menu-item">
+                    <div class="{{ request()->routeIs('product.index') ? 'menu-link active' : 'menu-link' }}">
                         <a class="menu-link" href="{{ route('product.index') }}">
                             <span class="menu-bullet">
                                 <span class="bullet bullet-dot"></span>

@@ -4,6 +4,7 @@
 return [
   'Dashboard' => 'لوحة التحكم',
   'Effective_Materials' => 'المواد الفعالة',
+  'All_Effective_Materials' => 'كل المواد الفعالة',
   'Add_Effective_Material' => 'أضافة مادة فعالة',
   'Edit_Effective_Material' => 'تعديل مادة فعالة',
   'Delete_Effective_Material' => 'حذف مادة فعالة',

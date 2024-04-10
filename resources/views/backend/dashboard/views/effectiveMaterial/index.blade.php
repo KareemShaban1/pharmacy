@@ -3,13 +3,13 @@
 @section('page-title')
     <div class="page-title d-flex flex-column me-5">
         <!--begin::Title-->
-        <h1 class="d-flex flex-column text-dark fw-bolder fs-3 mb-0">{{ trans('backend.All_Distribution_Companies') }}</h1>
+        <h1 class="d-flex flex-column text-dark fw-bolder fs-3 mb-0">{{ trans('backend.All_Effective_Materials') }}</h1>
         <!--end::Title-->
         <!--begin::Breadcrumb-->
         <ul class="breadcrumb breadcrumb-separatorless fw-bold fs-7 pt-1">
             <!--begin::Item-->
             <li class="breadcrumb-item text-muted">
-                {{-- <a href="{{ route('dashboard') }}" class="text-muted text-hover-primary">{{ trans('backend.Dashboard') }}</a> --}}
+                <a href="{{ route('dashboard') }}" class="text-muted text-hover-primary">{{ trans('backend.Dashboard') }}</a>
             </li>
             <!--end::Item-->
             <!--begin::Item-->
@@ -18,7 +18,7 @@
             </li>
             <!--end::Item-->
             <!--begin::Item-->
-            <li class="breadcrumb-item text-dark">{{ trans('backend.All_Facilities_Categories') }}</li>
+            <li class="breadcrumb-item text-dark">{{ trans('backend.All_Effective_Materials') }}</li>
             <!--end::Item-->
         </ul>
         <!--end::Breadcrumb-->
@@ -73,8 +73,8 @@
 
                                         @include('backend.dashboard.views.effectiveMaterial.edit_effective_material_modal')
 
-                                        <form action="{{ Route('effectiveMaterial.destroy', $material->id) }}" method="post"
-                                            style="display:inline">
+                                        <form action="{{ Route('effectiveMaterial.destroy', $material->id) }}"
+                                            method="post" style="display:inline">
                                             @csrf
                                             @method('delete')
 
